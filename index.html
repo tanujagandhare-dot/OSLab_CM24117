@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optimal Page Replacement</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🧠 Optimal Page Replacement</h1>
+    <p>Page Hit & Fault Calculator</p>
+</header>
+
+<div class="container">
+
+    <!-- Theory -->
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721287.png">
+        <h2>Theory</h2>
+        <p>
+            Optimal Page Replacement replaces the page that will not be used for the longest time in future.
+            It gives minimum page faults.
+        </p>
+    </div>
+
+    <!-- Input -->
+    <div class="card">
+        <h2>Input</h2>
+
+        <label>Enter Page Reference String:</label>
+        <input type="text" id="pages" placeholder="1 2 3 4 1 2 5 1 2 3 4 5">
+
+        <label>Frames:</label>
+        <input type="number" id="frames" value="3">
+
+        <button onclick="calculate()">🚀 Calculate</button>
+    </div>
+
+    <!-- Output -->
+    <div class="card output">
+        <h2>Result</h2>
+        <div id="result"></div>
+        <h3 id="stats"></h3>
+    </div>
+
+</div>
+
+<footer>
+    <p>Made by Tanuja Gandhare </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+<script src="script.js"></script>
